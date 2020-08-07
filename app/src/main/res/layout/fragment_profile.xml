@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/prrot"
+                />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="TALKIVY"
+                android:background="@drawable/edit_txt"
+                android:layout_height="40dp"
+                android:hint="Enter Your Name"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/edit_txt"
+                android:text="Talkivy"
+                android:layout_height="40dp"
+                android:hint="Enter Your Unique Username"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/edit_txt"
+                android:text="hello@talkivy"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your email id"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="New Password"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avatar URL"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="Avatar URL"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="#61FFD2"
+                    android:layout_gravity="center_vertical"
+                    android:text="T"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_outline_cloud_upload_24"
+                    android:textColor="#fff"
+                    />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_baseline_share_24"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:elevation="0dp"
+                android:text="Save Changes"
+                android:background="#C5CAE9"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:layout_marginBottom="100dp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

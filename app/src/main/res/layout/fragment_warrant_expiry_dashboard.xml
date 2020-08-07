@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WarrantExpiryDashboardFragment"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#84E3B8">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="cursive"
+                    android:text="29"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/cardsearch"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_bckgrnd"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date"
+                    android:layout_alignStart="@+id/date"
+                    android:layout_alignEnd="@+id/date"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="-9dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/alex_brush"
+                    android:text="Jul"
+                    android:textColor="#fff"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/expiry"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardsearch"
+                    android:layout_alignStart="@+id/cardsearch"
+                    android:layout_alignEnd="@+id/cardsearch"
+                    android:layout_alignBottom="@+id/cardsearch"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="-57dp"
+                    android:background="@drawable/btn1_bckgrnd"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Expiry"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_library_add_24" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/warranty"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardsearch"
+                    android:layout_alignStart="@+id/cardsearch"
+                    android:layout_alignEnd="@+id/cardsearch"
+                    android:layout_alignBottom="@+id/cardsearch"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="-108dp"
+                    android:background="@drawable/btn1_bckgrnd"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adamina"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Warranty"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_library_add_24" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approaching"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/adamina"
+            />
+
+        <RelativeLayout
+            android:id="@+id/warranty_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Warranty Products"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/expiry_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Expiry Products"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

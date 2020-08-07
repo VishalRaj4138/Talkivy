@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatusFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editstatus_appbarlayout"
+        android:background="#EDEBEB"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editstatus_toolbar"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="EditStatus"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Done"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editstatus_appbarlayout"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editstatus_editcardview"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="8dp"
+                    android:background="@android:color/white"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circleshape_green"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="What are you doing right now?"
+                        android:textSize="15sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+
+
+                        />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_below="@id/editstatus_editcardview"
+                    android:id="@+id/editstatus_busycardview"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circleshape_red"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Busy"
+                        android:textSize="25sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/editstatus_onlinecardview"
+                    android:layout_marginTop="05dp"
+                    android:layout_below="@id/editstatus_busycardview"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circleshape_green"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Online"
+                        android:textSize="25sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/editstatus_awaycardview"
+                    android:layout_marginTop="05dp"
+                    android:layout_below="@id/editstatus_onlinecardview"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circleshape_yellow"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Away"
+                        android:textSize="25sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/editstatus_invisiblecardview"
+                    android:layout_marginTop="05dp"
+                    android:layout_below="@id/editstatus_awaycardview"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circleshape_grey"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Invisible"
+                        android:textSize="25sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

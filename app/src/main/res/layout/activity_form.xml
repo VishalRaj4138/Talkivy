@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_baseline_assignment_ind_24"
+                android:hint="Product Name"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"/>
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_baseline_category_24"
+                android:hint="Enter Category"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingVertical="5dp">
+
+                <Button
+                    android:id="@+id/btn_elec"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_bckgrnd"
+                    android:elevation="0dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics"/>
+
+                <Button
+                    android:id="@+id/btn_medicines"
+                    android:elevation="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_bckgrnd"
+                    android:paddingHorizontal="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Medicines"/>
+
+                <Button
+                    android:id="@+id/btn_others"
+                    android:elevation="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bckgrnd"
+                    android:paddingHorizontal="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Others"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry/Warranty Date"/>
+
+            <EditText
+                android:id="@+id/date_id"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_round_event_available_24"
+                android:hint="Select Date"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification Time"/>
+
+            <EditText
+                android:id="@+id/time_id"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_outline_arrow_drop_down_circle_24"
+                android:hint="Select Time"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"/>
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="12dp"
+                android:paddingHorizontal="15dp"
+                android:background="@drawable/edit_txt"
+                android:layout_height="100dp"
+                android:hint="Write anything you want to remember about this product"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_bckgrnd"
+                android:layout_gravity="center"
+                android:text=" ADD + "
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

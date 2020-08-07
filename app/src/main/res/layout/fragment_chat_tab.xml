@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatTabFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEDEB"
+        android:id="@+id/channelchat_appbarlayout"
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/channelchat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/channelchat_chatbtn"
+                    android:gravity="start|left"
+                    android:text="#General"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/channelchat_chatbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/channelchat_searchbtn"
+                    android:background="@drawable/chaticon" />
+
+                <ImageButton
+                    android:id="@+id/channelchat_searchbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/searchicon" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/channelchat_recyclerview"
+        android:layout_below="@id/channelchat_appbarlayout"
+        android:layout_above="@id/channelchat_bottomrealtivelayout"
+        android:background="@android:color/white"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/channelchat_bottomrealtivelayout"
+        android:background="#FFEDEB"
+
+        >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/emoji"
+            android:id="@+id/channelchat_emoji"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channelchat_edittext"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Type your Message"
+            android:layout_toRightOf="@id/channelchat_emoji"
+            android:layout_toLeftOf="@id/channelchat_addbtn"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/channelchat_addbtn"
+            android:background="@drawable/addicon"
+            android:layout_toLeftOf="@id/channelchat_micbtn"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/channelchat_micbtn"
+            android:layout_centerVertical="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/mic2" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
